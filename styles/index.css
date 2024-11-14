@@ -83,7 +83,8 @@ a.site-name {
   }
 }
 
-/* Main for homepage*/
+
+/* Main for homepage------------------------------*/
 .homepage {
   position: relative;
   display: flex;
@@ -133,7 +134,7 @@ blockquote {
   }
 }
 
-/* Main for contribute page */
+/* Main for contribute page  -----------------------------------------*/
 
 .contribute-container {
   width: 100%;
@@ -220,7 +221,7 @@ blockquote {
   transform: translateY(-0.25rem);
 }
 
-/* main in history page */
+/* main in history page-------------------------------------- */
 .history-container {
   width: 100%;
   max-width: 75rem;
@@ -367,10 +368,8 @@ blockquote {
   background-color: #e65100;
 }
 
-/* main in credit page */
+/* main in credit page ----------------------------------------------*/
 
-/* 基础容器样式 */
-/* 基础容器样式 */
 .credit {
   width: 100%;
   max-width: 75rem;
@@ -379,7 +378,6 @@ blockquote {
   background-color: #fff;
 }
 
-/* 标题样式 */
 .credit h1 {
   font-size: 2rem;
   color: #2c3e50;
@@ -409,7 +407,6 @@ blockquote {
   border-left: 0.25rem solid #e74c3c;
 }
 
-/* 表格基础样式 - 移动端优先 */
 table {
   width: 100%;
   margin: 1rem 0 2rem;
