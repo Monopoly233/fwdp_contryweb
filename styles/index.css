@@ -1,3 +1,5 @@
+/* add more  */
+
 /* Header
 --------------------------------------------- */
 .site-header {
@@ -83,7 +85,6 @@ a.site-name {
   }
 }
 
-
 /* Main for homepage------------------------------*/
 .homepage {
   position: relative;
@@ -152,6 +153,10 @@ blockquote {
   background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+#contribute-h1 {
+  text-align: center;
 }
 
 .contribute h2 {
@@ -241,6 +246,10 @@ blockquote {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+}
+
+#history-h1 {
+  text-align: center;
 }
 
 .history h2 {
@@ -555,5 +564,155 @@ a:hover {
 
   a {
     color: #000;
+  }
+}
+
+/* add for the form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.875rem;
+  border: 0.125rem solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #2c3e50;
+  background-color: #f8fafc;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background-color: #fff;
+  box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.1);
+}
+
+textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+button {
+  background-color: #3b82f6;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #2563eb;
+  transform: translateY(-0.125rem);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+input:invalid,
+textarea:invalid {
+  border-color: #ef4444;
+}
+
+@media (max-width: 49.9375em) {
+  form {
+    padding: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 50em) {
+  form {
+    padding: 2.5rem;
+    gap: 2rem;
+  }
+
+  label {
+    font-size: 1.125rem;
+  }
+
+  input,
+  textarea {
+    padding: 1rem;
+    font-size: 1.125rem;
+  }
+
+  form:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12);
+  }
+
+  button {
+    align-self: flex-end;
+    min-width: 10rem;
+  }
+
+  input:hover,
+  textarea:hover {
+    background-color: #fff;
+    border-color: #94a3b8;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  form {
+    background-color: #1e293b;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+  }
+
+  label {
+    color: #e2e8f0;
+  }
+
+  input,
+  textarea {
+    background-color: #334155;
+    border-color: #475569;
+    color: #e2e8f0;
+  }
+
+  input:focus,
+  textarea:focus {
+    background-color: #1e293b;
+    border-color: #3b82f6;
+  }
+
+  input:hover,
+  textarea:hover {
+    background-color: #1e293b;
+    border-color: #64748b;
+  }
+
+  button {
+    background-color: #3b82f6;
+  }
+
+  button:hover {
+    background-color: #2563eb;
   }
 }
